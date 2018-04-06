@@ -9,22 +9,21 @@ const sheet_name_list = workbook.SheetNames;
 const search_variable = "prepareData";
 
 
-var data = JSON.stringify(XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]));
-console.log(data.values);
+var data = JSON.stringify(XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]),null, 4);
+// console.log(data.values);
 var data1 = "";
 var split_lines = 0;
 var split_columns = 0;
 sheet_name_list.forEach(function(y) {
   const worksheet = y;
 
-  // console.log(worksheet);
+  console.log(worksheet);
   // data1 += y;
-  data1 += JSON.stringify(XLSX.utils.sheet_to_json(workbook.Sheets[y]));
+  data1 += JSON.stringify(XLSX.utils.sheet_to_json(workbook.Sheets[y]), null, 4);
 
 });
 split_lines = data1.split("},{");
 split_columns = data1.split('","'); //split_columns.length-1
-
 
 
 fs.readFile("data.js", function(err, content) {
@@ -37,7 +36,7 @@ fs.readFile("data.js", function(err, content) {
 
 
 // append data to file
-fs.appendFile('test.js',data, 'utf8',
+fs.appendFile('test.js',data1, 'utf8',
     // callback function
     function(err) {
         if (err) throw err;

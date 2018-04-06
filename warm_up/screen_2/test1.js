@@ -1,4 +1,13 @@
 {
+    "Screen": "2/3",
+    "Week": "W1",
+    "Main sections": "warm-up",
+    "TOC Text": "2. Let's Remember Sentences",
+    "Instruction Text": "Tap the characters to hear what they say.",
+    "Learning Objectives": "•  Build confidence\n",
+    "Student Engagement": "•  Individual production",
+    "Teaching Procedure": "•  Encourage students to listen to what the characters say.\n•  Say 'hello' to your co-teacher (with your co-teacher saying 'hello' back to you).\n•  Go around the class saying 'hello' to each student and have them say 'hello' back to you."
+  },  // ===== preloadData data object contains data used for preloading ====== //{
     "Screen": "4/4",
     "Week": "W1",
     "Main sections": "writing",

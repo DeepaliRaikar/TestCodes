@@ -1,4 +1,14 @@
 {
+    "Screen": "2/4",
+    "Week": "W1",
+    "Main sections": "speaking",
+    "TOC Text": "2. Let's Practice Sentences",
+    "Instruction Text": "Tap PLAY to hear the song.",
+    "Learning Objectives": "•  Repeated practice of dialogue and language structures\n•  Build confidence & memorize language structures",
+    "Student Engagement": "• Whole-class production",
+    "Teaching Procedure": "•  Play the song and sing along, while doing simple actions.\n•  Encourage students to join in when they feel confident to do so.\n•  Sing the song as a whole class (1-2 times).\n",
+    "Video": "*"
+  },  // ===== preloadData data object contains data used for preloading ====== //{
     "Screen": "4/4",
     "Week": "W1",
     "Main sections": "writing",

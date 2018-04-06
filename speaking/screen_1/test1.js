@@ -1,4 +1,13 @@
 {
+    "Screen": "1/4",
+    "Week": "W1",
+    "Main sections": "speaking",
+    "TOC Text": "1. Let's Learn Sentences",
+    "Instruction Text": "Tap PLAY to start. Tap NEXT for more conversations.",
+    "Learning Objectives": "•  Understand the meaning of the dialogue and language structures\n•  Listen to and repeat the responsepart of the dialogue with correct pronunciation and intonation",
+    "Student Engagement": "•  Look and listen\n•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Allow students to listen to the dialogue.\n•  Use actions and expressive voice to help students understand the meaning of the language.\n•  Encourage students to repeat the response part of the dialogue, with actions.\n•  Tap NEXT for more dialogues."
+  },  // ===== preloadData data object contains data used for preloading ====== //{
     "Screen": "4/4",
     "Week": "W1",
     "Main sections": "writing",

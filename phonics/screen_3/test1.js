@@ -1,4 +1,14 @@
 {
+    "Screen": "3/6",
+    "Week": "W1",
+    "Main sections": "phonics",
+    "TOC Text": "3. Let's Learn the Letter of the Day",
+    "Instruction Text": "Tap the curtains to reveal the word, sound and letter of the day.",
+    "Learning Objectives": "•  Understand connection between word, sound and letter of the day\n•  Recognize upper case and lower case forms of letter of the day",
+    "Student Engagement": "•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Ask students if they can remember the word of the day, then tap the left curtain to check.\n•  Ask students if they can remember the sound of the day, then tap the middle curtain to check.\n•  Ask students if they can guess the letter of the day, then tap the right curtain to check.\n•  Have students repeat the sentence 'M sounds like /m/' while doing the action as they say the sound.",
+    "Video": "**"
+  },  // ===== preloadData data object contains data used for preloading ====== //{
     "Screen": "4/4",
     "Week": "W1",
     "Main sections": "writing",

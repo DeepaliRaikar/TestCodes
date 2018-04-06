@@ -1,4 +1,13 @@
 {
+    "Screen": "3/4",
+    "Week": "W1",
+    "Main sections": "writing",
+    "TOC Text": "3. Let's Understand Writing",
+    "Instruction Text": "Tap the pictures to hear the words. Use the pen to write.",
+    "Learning Objectives": "•  Understand how to complete workbook page 2",
+    "Student Engagement": "•  Whole-class participation in\n    discussion",
+    "Teaching Procedure": "•  Tap the PEN in the toolbar to enable the pen function.\n•  Demonstrate and explain how students should complete the page in their workbooks. As you are doing so, ask the following questions:\nQ: What is the letter of the day?' A: M\nQ: What does M sound like?  A: M sounds like /m/.\nQ: What does 'milk' start with'? A: Milk starts with /m/.\nQ: What letter should we write? A: M"
+  },  // ===== preloadData data object contains data used for preloading ====== //{
     "Screen": "4/4",
     "Week": "W1",
     "Main sections": "writing",

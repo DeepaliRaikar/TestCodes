@@ -20,8 +20,6 @@ sheet_name_list.forEach(function(y) {
 
         var value = worksheet[z].v;
 
-
-
         //store header names
         if(row == 1) {
             headers[col] = value;

@@ -1,4 +1,13 @@
 {
+    "Screen": "3/5",
+    "Week": "W1",
+    "Main sections": "reading",
+    "TOC Text": "3. Let's Read the Story",
+    "Instruction Text": "Tap the arrows to turn the pages. Tap the text to hear the words.",
+    "Learning Objectives": "•  Develop concept of print and associated skills\n•  Demonstrate comprehension of the text by answering simple questions",
+    "Student Engagement": "•  Whole-class listen and repeat\n•  Voluntary participation in class\n    discussion",
+    "Teaching Procedure": "•  Encourage students to repeat the sentences on each page (point to the words as the students read them).\n•  Tap the speaker to hear the sentence again.\n•  Tap ? to access comprehension questions for each page."
+  },  // ===== preloadData data object contains data used for preloading ====== //{
     "Screen": "4/4",
     "Week": "W1",
     "Main sections": "writing",

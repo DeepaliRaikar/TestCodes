@@ -1,4 +1,12 @@
 {
+    "Screen": "3/3",
+    "Week": "W1",
+    "Main sections": "warm-up",
+    "TOC Text": "3. Let's Learn About Our Classroom",
+    "Learning Objectives": "•  Introduce and contextualize lesson content\n•  Activate prior knowledge",
+    "Student Engagement": "•  Look and listen",
+    "Teaching Procedure": "•  Tell students that today we will be learning about more things in the classroom.\n•  Have students repeat the word 'classroom'.\n•  Remind students that the room they are in now is their classroom.\n•  Ask students if they can remember the words (in English) for any of the things in the picture.\n•  If students don't know all the words, DO NOT teach them now.\n•  Tell students that we will learn these words today, then move to the next activity."
+  },  // ===== preloadData data object contains data used for preloading ====== //{
     "Screen": "4/4",
     "Week": "W1",
     "Main sections": "writing",

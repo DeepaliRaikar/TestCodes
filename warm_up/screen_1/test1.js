@@ -1,4 +1,13 @@
 {
+    "Screen": "1/3",
+    "Week": "W1",
+    "Main sections": "warm-up",
+    "TOC Text": "1. Let's Remember Songs",
+    "Instruction Text": "Tap PLAY to hear the song.",
+    "Learning Objectives": "•  Build confidence\n",
+    "Student Engagement": "•  Whole-class production",
+    "Teaching Procedure": "•  Sing the song and encourage students to join in when they feel comfortable."
+  },  // ===== preloadData data object contains data used for preloading ====== //{
     "Screen": "4/4",
     "Week": "W1",
     "Main sections": "writing",
