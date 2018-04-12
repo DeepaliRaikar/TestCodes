@@ -1,33 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ==== //
-    titleImage: levelImageManager.images.screenTitle.speaking_lets_use,
-    titleAudio: levelAudioManager.audios.screenTitle.speaking_lets_use,
-    title: "Sentences",
-    subTitle: {
-      title: "Say It by Yourself",
-      textAlign: "left"
-    },
-    fontColor: "#333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "4. Let's Use Sentences",
+    "Instruction Text": "Tap the text to hear the question. Tap the characters to hear what they say.",
+    "Learning Objectives": "•  Apply language structures to express own ideas\r\n•  Demonstrate mastery of language structures",
+    "Student Engagement": "•  Individual production",
+    "Teaching Procedure": "•  Wave and say 'hello' to one of the characters on the screen, then ask 'what's your name?'.\r\n•  Encourage students to say the sentence (e.g. 'My name is Tom'), then tap the character to check.\r\n•   Repeat for all characters on the screen.\r\nPlay a Game: Pass the Ball (Part 1)\r\nHold a ball and say your name, then pass the ball to your co-teacher and have them do the same. Repeat if necessary. Pass the ball around the room and have each student say their name as they hold the ball.\r\nPlay a Game: Pass the Ball (Part 2)\r\nHold the ball and say: 'My name is [own name]', then pass the ball to your co-teacher and have them do the same. Repeat if necessary. Pass the ball around the room and have each student say: 'My name is [own name]' as they hold the ball. Finally, invite students to the front of the class to introduce themselves, using the sentence frame: 'Hello. My name is ___'."
   },
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
-  "scaleElements": [".clickItemsContainer",".btnParent"],
-  // ==== instructionText is used to give instruction text(itext) at the bottom of the screen ==== //
-  "instructionText": "Tap the text to hear the question. Tap the characters to hear what they say.",
-  // ==== backgroundImage provides background image to the screen ==== //
-  "backgroundImg": levelImageManager.images.speaking.backgroundimage,
-  // ==== spriteData contains data required to create  sprite animation ==== //
-  "spriteData": [
-    {
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	{
       id:0,
       // ==== frames data object object contains animation's width, height and number of frames ==== //
       frames: {
@@ -147,19 +129,17 @@ module.exports = {
   // ===== ostAudio array contains on screen text audio ====== //
   "ostAudio": levelAudioManager.audios.speaking.what_your_name_woman,
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Use Sentences",
-    //"howItWorks":" Tap the question to hear the audio. Tap any picture to hear the sentence. </br><u>Notes</u> <li>Week 1 will only feature four words </li><li>Week 2 will feature 8 words </li><li>Can be the same mural as used in the Warm-up section (but here with active clickable spots for audio) </li> ",
-    learningObjectives:"<li>Apply language structures to <i>express own ideas</i></li><li>Demonstrate mastery of language structures</li>",
-    studentEngagement:"<li>Individual production</li>",
-    teachingProcedure:"<li>Wave and say 'hello' to one of the characters on the screen, then ask 'what's your name?'.</li><li>Encourage students to say the sentence (e.g. 'My name is Tom'), then tap the character to check.</li><li>Repeat for all characters on the screen.<br><u>Play a Game: Pass the Ball (Part 1)</u><br>Hold a ball and say your name, then pass the ball to your co-teacher and have them do the same. Repeat if necessary. Pass the ball around the room and have each student say their name as they hold the ball.<br><u>Play a Game: Pass the Ball (Part 2)</u><br>Hold the ball and say: 'My name is [own name]', then pass the ball to your co-teacher and have them do the same. Repeat if necessary. Pass the ball around the room and have each student say: 'My name is [own name]' as they hold the ball. Finally, invite students to the front of the class to introduce themselves, using the sentence frame: 'Hello. My name is ___'.</li>",
-    videoData: [{
-
-    }],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "4. Let's Use Sentences",
+    "Instruction Text": "Tap the text to hear the question. Tap the characters to hear what they say.",
+    "Learning Objectives": "•  Apply language structures to express own ideas\r\n•  Demonstrate mastery of language structures",
+    "Student Engagement": "•  Individual production",
+    "Teaching Procedure": "•  Wave and say 'hello' to one of the characters on the screen, then ask 'what's your name?'.\r\n•  Encourage students to say the sentence (e.g. 'My name is Tom'), then tap the character to check.\r\n•   Repeat for all characters on the screen.\r\nPlay a Game: Pass the Ball (Part 1)\r\nHold a ball and say your name, then pass the ball to your co-teacher and have them do the same. Repeat if necessary. Pass the ball around the room and have each student say their name as they hold the ball.\r\nPlay a Game: Pass the Ball (Part 2)\r\nHold the ball and say: 'My name is [own name]', then pass the ball to your co-teacher and have them do the same. Repeat if necessary. Pass the ball around the room and have each student say: 'My name is [own name]' as they hold the ball. Finally, invite students to the front of the class to introduce themselves, using the sentence frame: 'Hello. My name is ___'."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [levelAudioManager.audios.speaking.meg, levelAudioManager.audios.speaking.kim, levelAudioManager.audios.speaking.sam, levelAudioManager.audios.speaking.tom, levelAudioManager.audios.speaking.what_your_name_woman],
     "images": [
       require("./assets/images/spreaking_bg_without_shadow.png"),

@@ -1,29 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  // ==== templateName contains name of the template which will use this data.js ==== //
-  "templateName": "fnd_letr_m",
-  // ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.phonics_lets_find,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_find_the_letter_of_the_day_man_1,
-    title: "the Letter of the Day",
-    subTitle: {
-      title: "Say It Together",
-      textAlign: "left"
-    },
-    fontColor: "#333333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "4. Let's Find the Letter of the Day",
+    "Instruction Text": "Tap PLAY to hear the song. Tap the letter of the day to enlarge it. Then tap the big and small letters.",
+    "Learning Objectives": "•  Understand context of letter of the day (position in the alphabet)\r\n•  Recognize upper case and lower case forms of letter of the day",
+    "Student Engagement": "•  Whole-class listen & repeat\r\n•  Whole-class production",
+    "Teaching Procedure": "•  Tell students that we can see the letters of the alphabet on the board.\r\n•  Tap PLAY and sing the alphabet song as a class.\r\n•  Ask students to recall the letter of the day.\r\n•  Ask students to find the letter of the day in the alphabet on the board.\r\n•  Tap the letter of the day to enlarge it.\r\n•  Tap the 'M' and have students repeat: 'big M'.\r\n•  Tap the 'm' and have students repeat: 'small m'.\r\nPlay a Game: Jump and Crouch\r\nEncourage students to say 'big M' and 'small m' as you point to the big and small letters on the board. Students should jump as they say 'big M' and crouch as they say 'small m'."
   },
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
-  "scaleElements": ["#fnd_letr_m .tree_image", "#fnd_letr_m .button", "#fnd_letr_m .innerpopup"],
-  // ==== text_1 and text_2 are pop-up letters ==== //
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	letters ==== //
   "text_1":"M",
   "text_2":"m",
   // ==== Address of respective pop-up letter ==== //
@@ -173,23 +159,17 @@ module.exports = {
   // ==== small_letter contains small letter form pop-up ==== //
   "small_letter": unitAudioManager.audios.phonics.small_m,
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Find the Letter of the Day",
-    //"howItWorks": "  Tap the button to play the Alphabet Song.  Tap any letter to hear the letter names.  Tap the letter of the day to enlarge, then tap capital and lower case letters to hear the names.  ",
-    learningObjectives: "<li>Understand context of letter of the day (position in the alphabet)</li><li>Recognize upper case and lower case forms of letter of the day</li>",
-    studentEngagement: "<li>Whole-class listen & repeat</li><li> Whole-class production</li>",
-    teachingProcedure:"<li>Tell students that we can see the letters of the alphabet on the board.</li><li>Tap <span class='boldStyle'>PLAY</span> and sing the alphabet song as a class(optional).</li><li>Ask students to recall the letter of the day.</li><li>Ask students to find the letter of the day in the alphabet on the board.</li><li>Tap the letter of the day to enlarge it.</li><li>Tap the 'M' and have students repeat: 'big M'. <li>Tap the 'm' and have students repeat: 'small m'.<br><u>Play a Game: Jump and Crouch</u><br>Encourage students to say 'big M' and 'small m' as you point to the big and small letters on the board. Students should jump as they say 'big M' and crouch as they say 'small m'.</li>",
-    videoData: [
-      {
-        "video": "",
-        "poster": ""
-      }
-    ],
-    gameActivity:"FALSE"
-
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "4. Let's Find the Letter of the Day",
+    "Instruction Text": "Tap PLAY to hear the song. Tap the letter of the day to enlarge it. Then tap the big and small letters.",
+    "Learning Objectives": "•  Understand context of letter of the day (position in the alphabet)\r\n•  Recognize upper case and lower case forms of letter of the day",
+    "Student Engagement": "•  Whole-class listen & repeat\r\n•  Whole-class production",
+    "Teaching Procedure": "•  Tell students that we can see the letters of the alphabet on the board.\r\n•  Tap PLAY and sing the alphabet song as a class.\r\n•  Ask students to recall the letter of the day.\r\n•  Ask students to find the letter of the day in the alphabet on the board.\r\n•  Tap the letter of the day to enlarge it.\r\n•  Tap the 'M' and have students repeat: 'big M'.\r\n•  Tap the 'm' and have students repeat: 'small m'.\r\nPlay a Game: Jump and Crouch\r\nEncourage students to say 'big M' and 'small m' as you point to the big and small letters on the board. Students should jump as they say 'big M' and crouch as they say 'small m'."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [...levelAudioManager.audios.phonics.alphabates,unitAudioManager.audios.phonics.alphabateSong, unitAudioManager.audios.phonics.capital_m, unitAudioManager.audios.phonics.small_m],
     "videos": [],
     "images": [require("./assets/images/phonics_4_play.png"), require("./assets/images/phonics_4_bg.png"), require("./assets/images/phonics_4_image.png"), require("./assets/images/close_icon.png")]

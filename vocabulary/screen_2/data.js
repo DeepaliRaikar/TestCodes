@@ -1,30 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ==== //
-    titleImage: levelImageManager.images.screenTitle.vocabulary_lets_practice,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_practice_words_man_1,
-    title: "Words",
-    subTitle: {
-      title: "Say It Together",
-      textAlign: "left"
-
-    },
-    fontColor: "#333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "2. Let's Practice Words",
+    "Instruction Text": "Tap the pictures to hear the words. Tap RESET to shuffle the pictures.",
+    "Learning Objectives": "•  Correctly identify words when presented with an image\r\n•  Produce words with correct pronunciation\r\n•  Build confidence & memorize words",
+    "Student Engagement": "•  Group production",
+    "Teaching Procedure": "•  Encourage the whole class to say the words as you point to the pictures on the board, then tap the pictures to check.\r\n•  Tap RESET and repeat.\r\nPlay a Game: Jump to the Lines\r\nUse some colored tape to make four lines on the floor. Place a basket by the last line. Invite 3-4 students to stand at the first line and give each student a ball. When you point to the first picture on the board, students should jump to the next line as they say the word. Repeat. When students reach the last line, they can throw their balls into the basket. Tap RESET and invite a different group of students to play.",
+    "Video": "*"
   },
-
-  // ==== itext is used to give instruction text(itext) at the bottom of the screen ==== //
-  "itext": "Tap the pictures to hear the words. Tap <span class='boldStyle'>RESET</span> to shuffle the pictures.",
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	s and classes) ==== //
   "scaleElements": ["#fc_v_1 .itemborder"],
   // ==== backgroundImage provide background image to the screen ==== //
   "backgroundImg": levelImageManager.images.backgroundimage,
@@ -145,18 +131,18 @@ module.exports = {
 
   "ostArr": [],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Practice Words",
-    //"howItWorks": "  Tap an image to hear the audio.  Tap the ‘next’ button to get a new set of words.</br><u>Notes</u>:<li>Refer to existing SEE program – lesson 1</li>",
-    learningObjectives: "<li>Correctly identify words when presented with an image</li><li>Produce words with correct pronunciation</li><li>Build confidence & memorize words</li>",
-    studentEngagement: "<li>Group production</li>",
-    teachingProcedure: "<li>Encourage the whole class to say the words as you point to the pictures on the board, then tap the pictures to check.</li><li>Tap <span class='boldStyle'>RESET</span> and repeat.<br><u>Play a Game: Jump to the Lines</u><br>Use some colored tape to make four lines on the floor. Place a basket by the last line. Invite 3-4 students to stand at the first line and give each student a ball. When you point to the first picture on the board, students should jump to the next line as they say the word. Repeat. When students reach the last line, they can throw their balls into the basket. Tap <span class='boldStyle'>RESET</span> and invite a different group of students to play.</li>",
-    videoData:[{}],
-    gameActivity:"FALSE"
-
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "2. Let's Practice Words",
+    "Instruction Text": "Tap the pictures to hear the words. Tap RESET to shuffle the pictures.",
+    "Learning Objectives": "•  Correctly identify words when presented with an image\r\n•  Produce words with correct pronunciation\r\n•  Build confidence & memorize words",
+    "Student Engagement": "•  Group production",
+    "Teaching Procedure": "•  Encourage the whole class to say the words as you point to the pictures on the board, then tap the pictures to check.\r\n•  Tap RESET and repeat.\r\nPlay a Game: Jump to the Lines\r\nUse some colored tape to make four lines on the floor. Place a basket by the last line. Invite 3-4 students to stand at the first line and give each student a ball. When you point to the first picture on the board, students should jump to the next line as they say the word. Repeat. When students reach the last line, they can throw their balls into the basket. Tap RESET and invite a different group of students to play.",
+    "Video": "*"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [
       levelAudioManager.audios.screenTitle.vocabulary_lets_parctice_words, unitAudioManager.audios.warm_up.cupboard_woman, unitAudioManager.audios.warm_up.bin_woman, unitAudioManager.audios.warm_up.chair_woman, unitAudioManager.audios.warm_up.table_woman
     ],

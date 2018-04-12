@@ -1,25 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ==== //
-    titleImage: levelImageManager.images.screenTitle.phonics_lets_learn,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_learn_the_sound_of_the_day_man_1,
-    title: "the Sound of the Day",
-    subTitle: {
-      title: "Listen and Repeat",
-      textAlign: "left"
-    },
-    fontColor: "#333333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "1. Let's Learn the Sound of the Day",
+    "Instruction Text": "Tap the curtains to reveal the word and sound of the day.",
+    "Learning Objectives": "•  Say word of the day with correct pronunciation, while doing associated action\r\n•  Understand connection between word and sound of the day (initial sound)\r\n•  Say sound of the day with correct pronunciation, while doing associated action",
+    "Student Engagement": "•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Tap the left curtain to reveal the word of the day.\r\n•  Have students listen and repeat the word several times.\r\n•  Say the word of the day with emphasis on the first sound.\r\n•   Encourage students to identify and say the first sound of the word.\r\n•  Ask students what they think will be the sound of the day, then tap the right curtain to reveal.\r\n•  Have students listen and repeat the sound several times, while doing the action.",
+    "Video": "**"
   },
-  // ==== instructionText is used to give instruction text(itext) at the bottom of the screen ==== //
-  "instructionText": "Tap the curtains to reveal the word and sound of the day.",
-  // ==== Contains title below curtains ==== //
-  "curtainTitle": ["Word of the Day", "Sound of the Day"],
-  /* minScale is used to scale the elements
-     If true : Enable scaling
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	 Enable scaling
      If false : Disable scaling
   */
   "minScale": true,
@@ -120,21 +111,18 @@ module.exports = {
   ],
 
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Learn the Sound of the Day",
-    //"howItWorks": "  Tap to reveal the word and sound of the day. </br><u>Notes</u>: <li>Images are covered at the start, by a curtain or something else. When image is touched, the curtain opens to reveal word of the day and sound of the day animation. </li><li>Word of the day on the left; sound of the day on the right </li> ",
-    learningObjectives: "<li>Say word of the day with correct pronunciation, while doing associated action</li><li>Understand connection between word and sound of the day (initial sound)</li><li>Say sound of the day with correct pronunciation, while doing associated action</li>",
-    studentEngagement:"<li>Whole-class listen and repeat</li>",
-    teachingProcedure: "<li>Tap the left curtain to reveal the word of the day.</li><li>Have students listen and repeat the word several times.</li><li>Say the word of the day with emphasis on the first sound.</li><li>Encourage students to identify and say the first sound of the word.</li><li>Ask students what they think will be the sound of the day, then tap the right curtain to reveal.</li><li>Have students listen and repeat the sound several times, while doing the action.</li>",
-    videoData: [
-      {
-
-      }
-    ],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "1. Let's Learn the Sound of the Day",
+    "Instruction Text": "Tap the curtains to reveal the word and sound of the day.",
+    "Learning Objectives": "•  Say word of the day with correct pronunciation, while doing associated action\r\n•  Understand connection between word and sound of the day (initial sound)\r\n•  Say sound of the day with correct pronunciation, while doing associated action",
+    "Student Engagement": "•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Tap the left curtain to reveal the word of the day.\r\n•  Have students listen and repeat the word several times.\r\n•  Say the word of the day with emphasis on the first sound.\r\n•   Encourage students to identify and say the first sound of the word.\r\n•  Ask students what they think will be the sound of the day, then tap the right curtain to reveal.\r\n•  Have students listen and repeat the sound several times, while doing the action.",
+    "Video": "**"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [],
     "videos": [],
     "images": [levelImageManager.images.screenTitle.phonics_lets_learn_sound_of_the_day]

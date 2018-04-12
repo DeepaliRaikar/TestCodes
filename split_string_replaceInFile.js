@@ -1,7 +1,5 @@
-
 // include file system module
 var fs = require('fs');
-
 // include XLSX to read an excel worksheet
 var XLSX = require('xlsx');
 var workbook = XLSX.readFile('LU_Teaching Guide for Prepare Mode.xlsx');
@@ -56,81 +54,121 @@ sheet_name_list.forEach(function(worksheet_name) {
     worksheet['!rowBreaks'];
     var headers = {};
     var data = [];
-    var column_count = 0;
-
+    var week = "";
 
     worksheet_name = worksheet_name.replace('-', '_').toLowerCase();
-    if(worksheet_name == 'week_1'){
-      for(z in worksheet) {
-          column_count += 1;
-          if(z[0] === '!') continue;
-          //parse out the column, row, and value
-          var col = z.substring(0,1);
-          var row = parseInt(z.substring(1));
+    week = worksheet_name;
+    for(cell_address in worksheet) {
+        if(cell_address[0] === '!') continue;
+        //parse out the column, row, and value
+        var col = cell_address.substring(0,1);
+        var row = parseInt(cell_address.substring(1));
+        var value = worksheet[cell_address].v;
+        var format_value = value;
+        if(format_value != undefined && JSON.stringify(format_value).includes("•")){
+          var cell_data_list = {};
+          var formatted_cell_data_list = "";
+          cell_data_list = format_value.split("•");
+          cell_data_list.shift();
+          cell_data_list.forEach(function(el){
+            formatted_cell_data_list += "<li>"+el.trim()+"</li>";
+          });
+          formatted_cell_data_list = "<ul>"+formatted_cell_data_list+"</ul>";
+          value = formatted_cell_data_list.trim();
+        }
 
-          if(col == 'A'){
-            column_count = 0;
-          }
+        //store header names
+        if(row == 1) {
+            headers[col] = value;
+            continue;
+        }
+        if(!data[row]) data[row]={};
+        data[row][headers[col]] = value;
 
-          var value = worksheet[z].v;
+    }
+    //drop those first two rows which are empty
+    data.shift();
+    data.shift();
 
-          //store header names
-          if(row == 1) {
-              headers[col] = value;
-              continue;
-          }
-          if(!data[row]) data[row]={};
-          data[row][headers[col]] = value;
+    for(var data_count = 1; data_count <= data.length; data_count++){
 
+      var relative_path = "";
 
+      row_data.shift();
+      row_data.push(data[data_count-1]);
+      // Store the Level, unit, section name and screen number to use it in the relative path
+      if(row_data[0]["Video"] == undefined){
+        row_data[0]["Video"] = [{"video": "", "poster": ""}];
       }
-      //drop those first two rows which are empty
-      data.shift();
-      data.shift();
-
-      for(var data_count = 1; data_count <= data.length; data_count++){
-        var relative_path = "";
-        row_data.shift();
-        row_data.push(data[data_count-1]);
-        // Store the Level name to use it in the relative path
-        var section_name = row_data[0]["Level"].toLowerCase();
-        var unit_name = row_data[0]["Unit"].toLowerCase();
-        if(section_name == "l1")
-          section_name = "level_1";
-        else if(section_name == "l2")
-          section_name = "level_2";
-      
-        // Store the Section name to use it in the relative path
-        var section_name = row_data[0]["Main sections"].replace('-', '_').toLowerCase();
-        //Store the Screen number to use it in the relative path
-        var screen_num = row_data[0]["Screen"].split("/",1);
 
 
-        relative_path += "./"+section_name+"/"+"screen_"+screen_num+"/";
-        delete row_data[0]["Main sections"];
-        delete row_data[0]["Week"];
-        delete row_data[0]["Screen"];
-        // delete row_data[0]["Level"];
-        // delete row_data[0]["Unit"];
+      console.log(row_data[0]["Video"]);
+      var level_name = row_data[0]["Level"].toLowerCase();
+      var level = level_name.substring(0,1);
+      level_name = level_name.replace(level, "level_");
 
-        // Stringify row_data
-        screen_data = JSON.stringify(row_data, null, 2).substr(1).slice(0, -1).trim()+",";
-        screen_data += "\r\n  // ===== preloadData data object contains data used for preloading ====== //\r\n\t";
+      var unit_name = row_data[0]["Unit"].toLowerCase();
+      var unit = unit_name.substring(0,1);
+      unit_name = unit_name.replace(unit, "unit_");
 
-        replace_string = screen_data;
+      // Store the Section name to use it in the relative path
+      var section_name = row_data[0]["Main sections"].replace('-', '_').toLowerCase();
+      //Store the Screen number to use it in the relative path
+      var screen_num = row_data[0]["Screen"].split("/",1);
 
-        var file = fs.readFileSync(relative_path+'data.js', "utf8");
+      var tocTitle_key = "tocTitle",
+          learningObjectives_key = "learningObjectives",
+          studentEngagement_key = "studentEngagement",
+          teachingProcedure_key = "teachingProcedure",
+          videoData_key = "videoData";
+          // itext_key = "itext";
 
-        // Fetch the string to be replaced from '"prepareData":' to '"preloadData"'
-        var string_to_replace = getFromBetween.get(file,'"prepareData":','"preloadData"');
-        // Replace and update the string
-        result = file.replace(string_to_replace, replace_string);
+      /* Relative path of the data.js looks something like this - level_name/unit_name/week/section_name/screen_num/data.js
+       i.e. level_1/unit_1/week_1/phonics/screen_1/data.js */
+      relative_path += "./"+level_name+"/"+unit_name+"/"+week+"/"+section_name+"/"+"screen_"+screen_num+"/";
 
+      /* fs.existsSync(path){
+             Do something if the file exists
+         } */
+      if (fs.existsSync(relative_path+"data.js")) {
+          var file = fs.readFileSync(relative_path+'data.js', "utf8");
+          var mapObj = {
+             "TOC Text":tocTitle_key,
+             "Learning Objectives":learningObjectives_key,
+             "Student Engagement":studentEngagement_key,
+             "Teaching Procedure":teachingProcedure_key,
+             "Video":videoData_key
+          };
+          var removeObjectProperties = function(obj, props) {
+              for(var i = 0; i < props.length; i++) {
+                  if(obj.hasOwnProperty(props[i])) {
+                      delete obj[props[i]];
+                  }
+              }
+          };
 
-        // Update in the data file
-        fs.writeFile(relative_path+'data.js', result, 'utf8', function (err) {
-           if (err) return console.log(err);
-        });
+          // Discard the columns which are not required
+          removeObjectProperties(row_data[0], ["Main sections", "Week", "Screen", "Level", "Unit", "Instruction Text"]);
+
+          // Stringify row_data
+          screen_data = JSON.stringify(row_data, null, 2).substr(1).slice(0, -1).trim()+",";
+          screen_data = screen_data.replace(/TOC Text|Learning Objectives|Student Engagement|Teaching Procedure|Video/gi, function(matched){
+            return mapObj[matched];
+          });
+          screen_data += "\r\n  // ===== preloadData data object contains data used for preloading ====== //\r\n\t";
+          replace_string = screen_data;
+
+          // Fetch the string to be replaced from '"prepareData":' to '"preloadData"'
+          var string_to_replace = getFromBetween.get(file,'"prepareData":','"preloadData"');
+          // Replace and update the string
+          result = file.replace(string_to_replace, replace_string);
+
+          // Update in the data file
+          fs.writeFile(relative_path+'data.js', result, 'utf8', function (err) {
+            if (err) return console.log(err);
+          });
+      }else{
+        console.log("Data.js file missing for "+relative_path);
       }
-  }
+    }
 });

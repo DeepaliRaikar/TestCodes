@@ -1,19 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-
-module.exports = {
-  // ==== templateName contains name of the template which will use this data.js ==== //
-  templateName: "write_letr_v_1",
-  // ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.writing_lets_understand,
-    titleAudio: levelAudioManager.audios.screenTitle.writing_lets_understand_writing,
-    title: "Writing",
-    subTitle: {
-      title: "Look, Listen and Do It Together",
-      textAlign: "left"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "3. Let's Understand Writing",
+    "Instruction Text": "Tap the pictures to hear the words. Use the pen to write.",
+    "Learning Objectives": "•  Understand how to complete workbook page 2",
+    "Student Engagement": "•  Whole-class participation in\r\n    discussion",
+    "Teaching Procedure": "•  Tap the PEN in the toolbar to enable the pen function.\r\n•  Demonstrate and explain how students should complete the page in their workbooks. As you are doing so, ask the following questions:\r\nQ: What is the letter of the day?' A: M\r\nQ: What does M sound like?  A: M sounds like /m/.\r\nQ: What does 'milk' start with'? A: Milk starts with /m/.\r\nQ: What letter should we write? A: M"
+  },
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	t"
     },
     font_color: "#333"
   },
@@ -191,19 +187,17 @@ module.exports = {
   // ===== ostArr array contains on screen text ====== //
   "ostArr": [],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Understand Writing",
-    //"howItWorks": "  Use the pen function to complete examples.  Tap the action button to see page 2. </br><u>Notes</u>: </br>- Tap pictures on the page to hear the word  ",
-    learningObjectives: "<li>Understand how to complete workbook page 2</li>",
-    studentEngagement: "<li>Whole-class participation in discussion</li>",
-    teachingProcedure: "<li>Tap the PEN in the toolbar to enable the pen function.</li><li>Demonstrate and explain how students should complete the page in their workbooks. As you are doing so, ask the following questions:<br> Q: What is the letter of the day?' A: M<br>Q: What does M sound like? A: M sounds like /m/. <br>Q: What does 'milk' start with'? A: Milk starts with /m/. <br>Q: What letter should we write? A: M</li>",
-    videoData: [{
-
-    }],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "3. Let's Understand Writing",
+    "Instruction Text": "Tap the pictures to hear the words. Use the pen to write.",
+    "Learning Objectives": "•  Understand how to complete workbook page 2",
+    "Student Engagement": "•  Whole-class participation in\r\n    discussion",
+    "Teaching Procedure": "•  Tap the PEN in the toolbar to enable the pen function.\r\n•  Demonstrate and explain how students should complete the page in their workbooks. As you are doing so, ask the following questions:\r\nQ: What is the letter of the day?' A: M\r\nQ: What does M sound like?  A: M sounds like /m/.\r\nQ: What does 'milk' start with'? A: Milk starts with /m/.\r\nQ: What letter should we write? A: M"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [],
     "images": [levelImageManager.images.screenTitle.writing_lets_understand]
   }

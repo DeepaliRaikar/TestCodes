@@ -1,23 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ==== //
-    titleImage: levelImageManager.images.screenTitle.phonics_lets_learn,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_learn_the_letter_of_the_day_man_1,
-    title: "the Letter of the Day",
-    subTitle: {
-      title: "Listen and Repeat",
-      textAlign: "left"
-    },
-    fontColor: "#333333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "3. Let's Learn the Letter of the Day",
+    "Instruction Text": "Tap the curtains to reveal the word, sound and letter of the day.",
+    "Learning Objectives": "•  Understand connection between word, sound and letter of the day\r\n•  Recognize upper case and lower case forms of letter of the day",
+    "Student Engagement": "•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Ask students if they can remember the word of the day, then tap the left curtain to check.\r\n•  Ask students if they can remember the sound of the day, then tap the middle curtain to check.\r\n•  Ask students if they can guess the letter of the day, then tap the right curtain to check.\r\n•  Have students repeat the sentence 'M sounds like /m/' while doing the action as they say the sound.",
+    "Video": "**"
   },
-
-  "curtainTitle" :["Word of the Day","Sound of the Day","Letter of the Day"],
-  // ==== instructionText is used to give instruction text(itext) at the bottom of the screen ==== //
-  "instructionText": "Tap the curtains to reveal the word, sound and letter of the day.",
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	xt": "Tap the curtains to reveal the word, sound and letter of the day.",
   /* minScale is used to scale the elements
      If true : Enable scaling
      If false : Disable scaling
@@ -205,18 +198,18 @@ module.exports = {
   "m_sound_like_audio" : unitAudioManager.audios.phonics.m_sounds_like_m ,
 
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Learn the Letter of the Day",
-    //"howItWorks":"  Tap to reveal the word and sound of the day.  </br>Notes: <li>Images are covered at the start. </li><li>Word of the day on the left; sound of the day on the right </li><li>Sound of the day should have an animation that helps students understand the sound-action. </li> ",
-    learningObjectives:"<li>Understand connection between word, sound and letter of the day</li><li>Recognize upper case and lower case forms of letter of the day</li>",
-    studentEngagement:"<li>Whole-class listen and repeat</li>",
-    teachingProcedure:"<li>Ask students if they can remember the word of the day, then tap the left curtain to check.</li><li>Ask students if they can remember the sound of the day, then tap the middle curtain to check.</li><li>Ask students if they can guess the letter of the day, then tap the right curtain to check.</li><li>Have students repeat the sentence 'M sounds like /m/' while doing the action as they say the sound.</li>",
-    videoData: [{
-    }],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "3. Let's Learn the Letter of the Day",
+    "Instruction Text": "Tap the curtains to reveal the word, sound and letter of the day.",
+    "Learning Objectives": "•  Understand connection between word, sound and letter of the day\r\n•  Recognize upper case and lower case forms of letter of the day",
+    "Student Engagement": "•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Ask students if they can remember the word of the day, then tap the left curtain to check.\r\n•  Ask students if they can remember the sound of the day, then tap the middle curtain to check.\r\n•  Ask students if they can guess the letter of the day, then tap the right curtain to check.\r\n•  Have students repeat the sentence 'M sounds like /m/' while doing the action as they say the sound.",
+    "Video": "**"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [unitAudioManager.audios.phonics.m_sounds_like_m],
     "videos": [],
     "images": []

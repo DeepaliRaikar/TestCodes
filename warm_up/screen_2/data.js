@@ -1,15 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ==== //
-
-    titleImage: levelImageManager.images.screenTitle.warm_up_lets_remember,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_remember_sentences_man_1,
-    title: "Sentences",
-    subTitle: {
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "2. Let's Remember Sentences",
+    "Instruction Text": "Tap the characters to hear what they say.",
+    "Learning Objectives": "•  Build confidence\r\n",
+    "Student Engagement": "•  Individual production",
+    "Teaching Procedure": "•  Encourage students to listen to what the characters say.\r\n•  Say 'hello' to your co-teacher (with your co-teacher saying 'hello' back to you).\r\n•  Go around the class saying 'hello' to each student and have them say 'hello' back to you."
+  },
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	  subTitle: {
       title: "Say It by Yourself ",
       textAlign: "left"
     },
@@ -132,17 +132,17 @@ module.exports = {
   },
   // ===== Prepare Mode data in HTML format ====== //
 
-  "prepareData": {
-    tocTitle: "Let's Remember Sentences",
-    //"howItWorks": "  Tap the characters to hear what they say. ",
-    learningObjectives: "<li>Build confidence</li>",
-    studentEngagement:"<li>Individual production</li>",
-    teachingProcedure: "<li>Encourage students to listen to what the characters say.</li><li>Say 'hello' to your co-teacher (with your co-teacher saying 'hello' back to you).</li><li>Go around the class saying 'hello' to each student and have them say 'hello' back to you.</li>",
-    videoData: [{}],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "2. Let's Remember Sentences",
+    "Instruction Text": "Tap the characters to hear what they say.",
+    "Learning Objectives": "•  Build confidence\r\n",
+    "Student Engagement": "•  Individual production",
+    "Teaching Procedure": "•  Encourage students to listen to what the characters say.\r\n•  Say 'hello' to your co-teacher (with your co-teacher saying 'hello' back to you).\r\n•  Go around the class saying 'hello' to each student and have them say 'hello' back to you."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [unitAudioManager.audios.warm_up.hello_sam, unitAudioManager.audios.warm_up.hello_meg],
     "videos": [],
     "images": [levelImageManager.images.warm_up.screen_2_bg, levelImageManager.images.screenTitle.warm_up_lets_remember]

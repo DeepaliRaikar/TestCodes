@@ -1,27 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-// ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.phonics_lets_find,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_find_the_letter_and_sound_man_1,
-    title: "the Letter and Sound",
-    subTitle: {
-      title: "Say It Together",
-      textAlign: "left"
-    }, fontColor: "#333333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "5. Let's Find the Letter and Sound",
+    "Instruction Text": "Tap the flashing puzzle piece to hear a sound. Drag the letters to the matching sound.",
+    "Learning Objectives": "•  Match letter of the day to the letter sound",
+    "Student Engagement": "•  Whole-class production\r\n•  Group/individual production",
+    "Teaching Procedure": "•  Draw attention to the letters at the bottom of the screen.\r\n•  Ask students: 'What does M sound like?'. Encourage students to use the sentence: 'M sounds like /m/'.\r\n•  Tell students that we need to listen to the sound (tap the highlighted puzzle piece to hear the audio).\r\n•  If we hear /m/, we should say 'M sounds like /m/', then we can drag the letter M to complete the picture.\r\n•  If we hear a different sound, we should say 'NO'.\r\n•  Tap NEXT to continue. Invite students who are participating well to drag the letters.\r\n•  Tap RESET to play again."
   },
-
-  // ==== templateName contains name of the template which will use this data.js ==== //
-  "templateName":"mch_letr_snd_m",
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	(id's and classes) ==== //
   "scaleElements": ["#mch_letr_snd_m .mid_sec"],
 
   "text":"M sounds like /m/",
@@ -34,22 +22,17 @@ module.exports = {
   // ===== distract_array contains wrong part of puzzle for distraction ====== //
   "distract_array":[{id:1},{id:3},{id:5},{id:8}],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Find the Letter and Sound",
-    //"howItWorks": "",
-    learningObjectives: "<li>Match letter of the day to the letter sound</li>",
-    studentEngagement: "<li>Whole-class production</li><li> Group/individual production</li>",
-    teachingProcedure: "<li>Draw attention to the letters at the bottom of the screen.</li><li>Ask students: 'What does M sound like?'. Encourage students to use the sentence: 'M sounds like /m/'.</li><li>Tell students that we need to listen to the sound (tap the highlighted puzzle piece to hear the audio).</li><li>If we hear /m/, we should say 'M sounds like /m/', then we can drag the letter M to complete the picture.</li><li>If we hear a different sound, we should say 'NO'.</li><li>Tap <span class='boldStyle'>NEXT</span> to continue. Invite students who are participating well to drag the letters.</li><li>Tap <span class='boldStyle'>RESET</span> to play again.</li>",
-    videoData: [
-      {
-
-      }
-    ],
-    gameActivity:"FALSE"
-
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "5. Let's Find the Letter and Sound",
+    "Instruction Text": "Tap the flashing puzzle piece to hear a sound. Drag the letters to the matching sound.",
+    "Learning Objectives": "•  Match letter of the day to the letter sound",
+    "Student Engagement": "•  Whole-class production\r\n•  Group/individual production",
+    "Teaching Procedure": "•  Draw attention to the letters at the bottom of the screen.\r\n•  Ask students: 'What does M sound like?'. Encourage students to use the sentence: 'M sounds like /m/'.\r\n•  Tell students that we need to listen to the sound (tap the highlighted puzzle piece to hear the audio).\r\n•  If we hear /m/, we should say 'M sounds like /m/', then we can drag the letter M to complete the picture.\r\n•  If we hear a different sound, we should say 'NO'.\r\n•  Tap NEXT to continue. Invite students who are participating well to drag the letters.\r\n•  Tap RESET to play again."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [
       unitAudioManager.audios.phonics.m_woman,
       unitAudioManager.audios.phonics.a_woman,

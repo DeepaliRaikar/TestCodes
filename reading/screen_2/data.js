@@ -1,22 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  // ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.reading_lets_listen,
-    titleAudio: levelAudioManager.audios.screenTitle.reading_lets_listen_to_the_story,
-    title: "to the Story",
-    subTitle: {
-      title: "Look, Listen and Enjoy",
-      textAlign: "left"
-    },
-    fontColor: "#FFF"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "2. Let's Listen to the Story",
+    "Instruction Text": "Tap the arrows to turn the pages. Tap the text to hear the words.",
+    "Learning Objectives": "•  Make simple predictions and activate prior knowledge\r\n•  Enjoy the story (language, illustrations and concepts)\r\n•  Develop a basic understanding of the story",
+    "Student Engagement": "•  Look and listen\r\n•  Voluntary participation in class\r\n    discussion",
+    "Teaching Procedure": "•  Allow students to listen and enjoy the story (students should NOT be repeating the sentences at this stage).\r\n•  Tap the speaker to hear the sentence again.\r\n•  Tap ? to access comprehension questions for each page."
   },
-  doQuestionsExist: true,
-  doContainerExist: false,
-  //if tap answer button required
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	ed
   tapAnswerRequired: true,
   /* minScale is used to scale the elements
      If true : Enable scaling
@@ -30,20 +23,17 @@ module.exports = {
   // ==== spriteData contains data required to create  sprite animation ==== //
   "spriteData": [],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Listen to the Story",
-    //"howItWorks": "Tap any word to hear the individual word.  Tap the ‘next’ button to turn the page.",
-    learningObjectives: "<li>Make simple predictions and activate prior knowledge</li><li>Enjoy the story (language, illustrations and concepts)</li><li>Develop a basic understanding of the story</li>",
-    studentEngagement: "<li>Look and listen</li><li>Voluntary participation in class discussion</li>",
-    teachingProcedure: "<li>Allow students to listen and enjoy the story (students should NOT be repeating the sentences at this stage).</li><li>Tap the speaker to hear the sentence again.</li><li>Tap <span class='boldStyle'>?</span> to access comprehension questions for each page.</li>",
-    videoData: [{
-      
-
-    }],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "2. Let's Listen to the Story",
+    "Instruction Text": "Tap the arrows to turn the pages. Tap the text to hear the words.",
+    "Learning Objectives": "•  Make simple predictions and activate prior knowledge\r\n•  Enjoy the story (language, illustrations and concepts)\r\n•  Develop a basic understanding of the story",
+    "Student Engagement": "•  Look and listen\r\n•  Voluntary participation in class\r\n    discussion",
+    "Teaching Procedure": "•  Allow students to listen and enjoy the story (students should NOT be repeating the sentences at this stage).\r\n•  Tap the speaker to hear the sentence again.\r\n•  Tap ? to access comprehension questions for each page."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [unitAudioManager.audios.reading.where,
       unitAudioManager.audios.reading.is,
       unitAudioManager.audios.reading.the,

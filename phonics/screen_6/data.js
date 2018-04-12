@@ -1,32 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  // ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.phonics_lets_remember,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_remember_letters_and_sounds_man_1,
-    title: "Letters and Sounds",
-    subTitle: {
-      title: "Say It Together",
-      textAlign: "left"
-    },
-    fontColor: "#333333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "6. Let's Remember Letters and Sounds",
+    "Instruction Text": "Tap the character to see a letter. Tap the letter of the day to collect.",
+    "Learning Objectives": "•  Match letter of the day to the letter sound",
+    "Student Engagement": "•  Whole-class production\r\n•  Group/individual production",
+    "Teaching Procedure": "•  Tap Sam's hand to reveal a letter. If the letter is M/m, ask students: 'What does M sound like?'\r\n•  Encourage them to respond: 'M sounds like /m/' and click the letter to collect it.\r\n•  If a different letter appears, ask students: 'Is this letter M?'\r\n•  Have students respond, then click the hand again, to reveal another letter.\r\n•  Invite students who are participating well to come to the board and tap.\r\n•  Repeat, until all letters have been filled at the top of the screen.\r\nPlay a Game: Class Relay\r\nStudents take turns to come to the board and tap the hand If they see the letter of the day, students should say: 'M sounds like /m/' and tap the letter. Students each get one turn to tap the board, then they go back and high-five the next student to come and try.\r\n",
+    "Video": "*"
   },
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  minScale: true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
-  scaleElements: [
-    "#cth_wrm_m .character-container", "#cth_wrm_m .ans-marker", "#cth_wrm_m .whole-worm-container", "#cth_wrm_m .displayAlphabet"
-  ],
-
-  // ==== screenData contains alphabets which are displayed on the screen ==== //
-  screenData: ["M", "m", "M", "m"],
-  // ==== instText is used to give instruction text(itext) at the bottom of the screen ==== //
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	uction text(itext) at the bottom of the screen ==== //
   instructionText: "Tap the character to see a letter. Tap the letter of the day to collect.",
   // ==== wormCount gives no of worms ==== //
   wormCount: 5,
@@ -397,21 +381,18 @@ module.exports = {
     }
   ],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Remember Letters and Sounds",
-    //"howItWorks": "Tap the signs to see a new letter.  Tap the letter of the day to collect it.</br><u>Notes</u><u>:</u><li>MAY REQUIRE CONCEPT REFINEMENT</li><li>When a sign is tapped, a worm appears with a letter</li><li>There should be a 40% chance that it is the letter of the day</li><li>Tap the letter of the day to hear audio confirmation (e.g. “B sounds like /b/”) and letter goes up to fill one of the letters at the top of the screen.</li><li>If it is not the letter of the day, nothing happens when tapped (no audio).</li><li>Tap the sign again for the current letter to go back down and another letter to appear from a different hole.</li>",
-    learningObjectives: "<li>Match letter of the day to the letter sound</li>",
-    studentEngagement: "<li>Whole-class production</li><li>Group/individual production</li>",
-    teachingProcedure: "<li>Tap Sam's hand to reveal a letter. If the letter is M/m, ask students: 'What does M sound like?' </li><li>Encourage them to respond: 'M sounds like /m/' and click the letter to collect it.</li><li>If a different letter appears, ask students: 'Is this letter M?' </li><li>Have students respond, then click the hand again, to reveal another letter.</li><li>Invite students who are participating well to come to the board and tap.</li><li>Repeat, until all letters have been filled at the top of the screen.<br><u>Play a Game: Class Relay</u><br>Students take turns to come to the board and tap the hand If they see the letter of the day, students should say: 'M sounds like /m/' and tap the letter. Students each get one turn to tap the board, then they go back and high-five the next student to come and try.</li>",
-    videoData: [
-      {
-
-      }
-    ],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "6. Let's Remember Letters and Sounds",
+    "Instruction Text": "Tap the character to see a letter. Tap the letter of the day to collect.",
+    "Learning Objectives": "•  Match letter of the day to the letter sound",
+    "Student Engagement": "•  Whole-class production\r\n•  Group/individual production",
+    "Teaching Procedure": "•  Tap Sam's hand to reveal a letter. If the letter is M/m, ask students: 'What does M sound like?'\r\n•  Encourage them to respond: 'M sounds like /m/' and click the letter to collect it.\r\n•  If a different letter appears, ask students: 'Is this letter M?'\r\n•  Have students respond, then click the hand again, to reveal another letter.\r\n•  Invite students who are participating well to come to the board and tap.\r\n•  Repeat, until all letters have been filled at the top of the screen.\r\nPlay a Game: Class Relay\r\nStudents take turns to come to the board and tap the hand If they see the letter of the day, students should say: 'M sounds like /m/' and tap the letter. Students each get one turn to tap the board, then they go back and high-five the next student to come and try.\r\n",
+    "Video": "*"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [unitAudioManager.audios.phonics.feedback[2], levelAudioManager.audios.phonics.tap_fx, unitAudioManager.audios.phonics.feedback[0]],
     "videos": [],
     "images": [require("./assets/images/phonics_6_bg.png"), require("./assets/images/phonics_6_worm1_hole.png"), require("./assets/images/phonics_6_bg1.png"), require("./assets/images/phonics_6_worm1.png")]

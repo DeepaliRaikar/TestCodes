@@ -1,31 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ==== //
-    titleImage: levelImageManager.images.screenTitle.vocabulary_lets_use,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_use_words_man_1,
-    title: "Words",
-    subTitle: {
-      title: "Say It In a Sentence",
-      textAlign: "left"
-    },
-    fontColor: "#333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "4. Let's Use Words",
+    "Instruction Text": "Tap the highlighted object to hear the sentence. Tap NEXT to continue.",
+    "Learning Objectives": "•  Understand the meaning of the target sentence structure\r\n•  Use words in the target sentence structure",
+    "Student Engagement": "•  Whole-class listen and repeat\r\n•  Whole-class production\r\n•  Group/individual production",
+    "Teaching Procedure": "•  Point to the highlighted picture and ask your co-teacher: 'What's this?'.\r\n•  Your co-teacher should use the target language to answer (e.g. 'A table.'), then tap the image to check. Have students repeat the sentence.\r\n•  Tap NEXT to highlight a different word. Ask students: 'What's this?'.\r\n•  Click the picture to check and have the whole class repeat the sentence.\r\n•  Continue.\r\n•  As students develop confidence, have the whole class produce the sentences without listening first.\r\n•  Finally, have students take turns to say the sentences individually."
   },
-
-
-  "title": "Let's Use Words Say It in a Sentence",
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
-  "scaleElements": ["#mur_arrow_m .ObjectContainer"],
-  // ==== instructionText is used to give instruction text(itext) at the bottom of the screen ==== //
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	m of the screen ==== //
   "instructionText": "Tap the highlighted object to hear the sentence. Tap <span class='boldStyle'>NEXT</span> to continue.",
   // ==== backgroundImage provide background image to the screen ==== //
   "backgroundImg": levelImageManager.backgroundImg,
@@ -273,22 +257,17 @@ module.exports = {
   // ===== ostArr array contains on screen text ====== //
   "ostArr": [],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Use Words",
-    //"howItWorks": " Tap the question to hear the audio. Tap any picture to hear the sentence. </br><u>Notes</u> <li>Week 1 will only feature four words </li><li>Can be the same mural as used in the Warm-up section (but here with active clickable spots for audio) </li> ",
-    learningObjectives: " <li>Understand the meaning of the target sentence structure</li><li>Use words in the target sentence structure</li> ",
-    studentEngagement: " <li>Whole-class listen and repeat</li><li>Whole-class production</li><li>Group/individual production</li> ",
-    teachingProcedure: " <li>Point to the highlighted picture and ask your co-teacher: 'What's this?'.</li><li>Your co-teacher should use the target language to answer (e.g. 'A table.'), then tap the image to check. Have students repeat the sentence.</li><li>Tap <span class='boldStyle'>NEXT</span> to highlight a different word. Ask students: 'What's this?'.</li><li>Click the picture to check and have the whole class repeat the sentence.</li><li>Continue.</li><li>As students develop confidence, have the whole class produce the sentences without listening first.</li><li>Finally, have students take turns to say the sentences individually.</li>",
-    videoData: [
-      {
-        
-      }
-    ],
-    gameActivity:"FALSE"
-
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "4. Let's Use Words",
+    "Instruction Text": "Tap the highlighted object to hear the sentence. Tap NEXT to continue.",
+    "Learning Objectives": "•  Understand the meaning of the target sentence structure\r\n•  Use words in the target sentence structure",
+    "Student Engagement": "•  Whole-class listen and repeat\r\n•  Whole-class production\r\n•  Group/individual production",
+    "Teaching Procedure": "•  Point to the highlighted picture and ask your co-teacher: 'What's this?'.\r\n•  Your co-teacher should use the target language to answer (e.g. 'A table.'), then tap the image to check. Have students repeat the sentence.\r\n•  Tap NEXT to highlight a different word. Ask students: 'What's this?'.\r\n•  Click the picture to check and have the whole class repeat the sentence.\r\n•  Continue.\r\n•  As students develop confidence, have the whole class produce the sentences without listening first.\r\n•  Finally, have students take turns to say the sentences individually."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [
       levelAudioManager.audios.screenTitle.vocabulary_lets_parctice_words,
       unitAudioManager.audios.vocabulary.table,

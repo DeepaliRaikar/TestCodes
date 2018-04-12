@@ -1,30 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ==== //
-    titleImage: levelImageManager.images.screenTitle.vocabulary_lets_learn,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_learn_new_words_man_1,
-    title: "New Words",
-    subTitle: {
-      title: "Listen and Repeat",
-      textAlign: "left"
-    },
-    fontColor: "#333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "1. Let's Learn New Words",
+    "Instruction Text": "Tap the pictures to hear the words.",
+    "Learning Objectives": "•  Understand the meaning of new words\r\n•  Listen to and repeat words with correct pronunciation\r\n•  Begin to memorize words",
+    "Student Engagement": "•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Have students listen to each word and repeat it at least three times (if possible, have students do actions for the words)\r\n•  After going through all the words, have students listen and repeat each word again, at a faster pace.\r\n•  Listen for words that students are having trouble with and spend extra time on those.\r\nPlay a Game: Run & Touch\r\nSelect 3-4 students to come and stand a few meters away from the board. When you say a word, the students should run and touch the picture on the board (saying the word as they run). Your co-teacher should encourage the sitting students to also say the word. After a few turns, select another group of students to play. Keep it fast-paced!\r\n",
+    "Video": "**"
   },
-  // ==== instructionText is used to give instruction text(itext) at the bottom of the screen ==== //
-  instructionText: "Tap the pictures to hear the words.",
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
-  "scaleElements": ["#fc_m .shadowImage", "#fc_m .imageParent"],
-  // ==== spriteData contains data required to create  sprite animation ==== //
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	ta contains data required to create  sprite animation ==== //
   "spriteData": [{
     id: 1,
     // ==== frames data object object contains animation's width, height and number of frames ==== //
@@ -164,19 +150,18 @@ module.exports = {
 
   "ostArr": [],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Learn New Words",
-    //"howItWorks": "Tap the pictures at the bottom of the screen to hear audio and see a large image in the center.",
-    learningObjectives: "<li>Understand the meaning of new words</li><li>Listen to and repeat words with correct pronunciation</li><li>Begin to memorize words</li>",
-    studentEngagement: "<li>Whole-class listen and repeat</li>",
-    teachingProcedure: " <li>Have students listen to each word and repeat it at least three times (if possible, have students do actions for the words)</li><li>After going through all the words, have students listen and repeat each word again, at a faster pace.</li><li>Listen for words that students are having trouble with and spend extra time on those.<br><u>Play a Game: Run & Touch</u><br>Select 3-4 students to come and stand a few meters away from the board. When you say a word, the students should run and touch the picture on the board (saying the word as they run). Your co-teacher should encourage the sitting students to also say the word. After a few turns, select another group of students to play. Keep it fast-paced!</li>",
-    videoData: [{
-
-    }],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "1. Let's Learn New Words",
+    "Instruction Text": "Tap the pictures to hear the words.",
+    "Learning Objectives": "•  Understand the meaning of new words\r\n•  Listen to and repeat words with correct pronunciation\r\n•  Begin to memorize words",
+    "Student Engagement": "•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Have students listen to each word and repeat it at least three times (if possible, have students do actions for the words)\r\n•  After going through all the words, have students listen and repeat each word again, at a faster pace.\r\n•  Listen for words that students are having trouble with and spend extra time on those.\r\nPlay a Game: Run & Touch\r\nSelect 3-4 students to come and stand a few meters away from the board. When you say a word, the students should run and touch the picture on the board (saying the word as they run). Your co-teacher should encourage the sitting students to also say the word. After a few turns, select another group of students to play. Keep it fast-paced!\r\n",
+    "Video": "**"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [levelAudioManager.audios.screenTitle.vocabulary_lets_parctice_words, unitAudioManager.audios.warm_up.cupboard_woman, unitAudioManager.audios.warm_up.bin_woman, unitAudioManager.audios.warm_up.chair_woman, unitAudioManager.audios.warm_up.table_woman],
     "images": [levelImageManager.images.vocabulary.cupboard, levelImageManager.images.vocabulary.bin, levelImageManager.images.vocabulary.updated_chair, levelImageManager.images.vocabulary.updated_table,levelImageManager.images.screenTitle.vocabulary_lets_learn ]
   }

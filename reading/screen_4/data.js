@@ -1,23 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.reading_lets_read,
-    titleAudio: levelAudioManager.audios.screenTitle.reading_lets_read_for_practice,
-    title: "for Practice",
-    subTitle: {
-      title: "Do It Together",
-      textAlign: "left"
-      // textAlign: "left|right|center"
-    },
-    fontColor: "#fff"
-
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "4. Let's Read for Practice",
+    "Instruction Text": "Tap words that start with with M to collect them.",
+    "Learning Objectives": "•  Develop concept of print and associated skills\r\n•  Identify letters and corresponding sounds within words on the page\r\n•  Locate words on the page",
+    "Student Engagement": "•  Whole-class listen and repeat\r\n•  Whole-class production\r\n•  Group production",
+    "Teaching Procedure": "•  Encourage students to repeat the sentences on each page (clearly point to the words as the students read them).\r\n•  Tap the speaker to hear the sentence again.\r\n•  Tap ? to access comprehension questions for each page.\r\n•  Encourage students to find words beginning with M.\r\n•  Invite students to come to the board and tap the words to collect them."
   },
-  //property specifies whether questions/help button will be visible/invisible in dom. if "true" then visible in dom or else invisible.
-  doQuestionsExist: true,
-  //property specifies whether questions/help button will be visible/invisible in dom. if "true" then visible in dom or else invisible.
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	 visible in dom or else invisible.
 
   //property specifies whether container will be visible/invisible in dom. if "true" then visible in dom or else invisible.
   doContainerExist: true,
@@ -285,20 +277,17 @@ module.exports = {
   ],
   // spriteData array should be empty if there are no sprites/svg interactivity
   // ===== Prepare Mode data in HTML format ======
-  "prepareData": {
-    tocTitle: "Let's Read for Practice",
-    //"howItWorks": "Tap any word to hear the individual word.  Tap the ‘next’ button to turn the page.",
-    learningObjectives: "<li>Develop concept of print and associated skills</li><li>Identify letters andcorresponding sounds within words on the page</li><li>Locate words on the page</li>",
-    studentEngagement: "<li>Whole-class listen and repeat</li><li>Whole-class production</li><li>Group production</li>",
-    teachingProcedure: "<li>Encourage students to repeat the sentences on each page (clearly point to the words as the students read them).</li><li>Tap the speaker to hear the sentence again.</li><li>Tap <span class='boldStyle'>?</span> to access comprehension questions for each page.</li><li>Encourage students to find words beginning with M.</li><li> Invite students to come to the board and tap the words to collect them.</li>",
-    videoData: [{
-
-
-    }],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "4. Let's Read for Practice",
+    "Instruction Text": "Tap words that start with with M to collect them.",
+    "Learning Objectives": "•  Develop concept of print and associated skills\r\n•  Identify letters and corresponding sounds within words on the page\r\n•  Locate words on the page",
+    "Student Engagement": "•  Whole-class listen and repeat\r\n•  Whole-class production\r\n•  Group production",
+    "Teaching Procedure": "•  Encourage students to repeat the sentences on each page (clearly point to the words as the students read them).\r\n•  Tap the speaker to hear the sentence again.\r\n•  Tap ? to access comprehension questions for each page.\r\n•  Encourage students to find words beginning with M.\r\n•  Invite students to come to the board and tap the words to collect them."
   },
-  // ===== Preloading the data ======
-  "preloadData": {
+  // ===== preloadData data object contains data used for preloading ====== //
+	"preloadData": {
     "audios": [
       unitAudioManager.audios.phonics.feedback[0],
 	  unitAudioManager.audios.reading.man,

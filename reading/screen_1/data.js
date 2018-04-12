@@ -1,34 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  // ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.reading_lets_learn,
-    titleAudio: levelAudioManager.audios.screenTitle.reading_lets_learn_new_words,
-    title: "New Words",
-    subTitle: {
-      title: "Listen and Repeat",
-      textAlign: "left"
-    },
-    fontColor: "#333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "1. Let's Learn New Words",
+    "Instruction Text": "Tap the pictures to hear the words.",
+    "Learning Objectives": "•  Understand the meaning of new words\r\n•  Listen and repeat words with correct pronunciation",
+    "Student Engagement": "•  Whole class listen and repeat",
+    "Teaching Procedure": "•  Have students listen to each word and repeat it at least three times (if possible, have students do actions for the words)\r\n•  After going through all the words, have students listen and repeat each word again, at a faster pace.\r\n•  Listen for words that students are having trouble with and spend extra time on those.\r\nPlay a Game: Step to the Board\r\nTap on a picture and have students repeat the word, while doing the action. Then, students need to stand up and take three steps forward. Each time they take a step, they should say the word and do the action. When students are close to the board, chase them back to their seats. Repeat\r\n",
+    "Video": "**"
   },
-  // ===== element styling ====== //
-  "imgClass":{
-
-  },
-  "clickItemsContainer":{
-
-  },
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
-  "scaleElements": ["#fc_v_3 .imageParent", "#fc_v_3 .ele_Container"],
-  // ==== backgroundImg provides background image ==== //
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	  // ==== backgroundImg provides background image ==== //
   "backgroundImg": levelImageManager.images.backgroundimage,
   // ==== spriteData contains data required to create  sprite animation ==== //
   "spriteData": [
@@ -297,19 +279,18 @@ module.exports = {
   autoPlay: true,
   // autoplay states whether audio should be played by default while turning pages value shold be true if required or else false
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Learn New Words",
-    //"howItWorks":"  Tap the pictures at the bottom of the screen to hear audio and see a large image in the center.  Click the arrow for more words. </br><u>Notes</u>: </br>- In some cases there will be more than four words.  Click the arrow to see the rest of the words.  ",
-    learningObjectives:"<li>Understand the meaning of new words</li><li>Listen and repeat words with correct pronunciation</li>",
-    studentEngagement:"<li>Whole class listen and repeat</li>",
-    teachingProcedure:"<li>Have students listen to each word and repeat it at least three times (if possible, have students do actions for the words)</li><li>After going through all the words, have students listen and repeat each word again, at a faster pace.</li><li>Listen for words that students are having trouble with and spend extra time on those.<br><u>Play a Game: Step to the Board</u><br>Tap on a picture and have students repeat the word, while doing the action. Then, students need to stand up and take three steps forward. Each time they take a step, they should say the word and do the action. When students are close to the board, chase them back to their seats. Repeat</li>",
-    videoData: [{
-
-    }],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "1. Let's Learn New Words",
+    "Instruction Text": "Tap the pictures to hear the words.",
+    "Learning Objectives": "•  Understand the meaning of new words\r\n•  Listen and repeat words with correct pronunciation",
+    "Student Engagement": "•  Whole class listen and repeat",
+    "Teaching Procedure": "•  Have students listen to each word and repeat it at least three times (if possible, have students do actions for the words)\r\n•  After going through all the words, have students listen and repeat each word again, at a faster pace.\r\n•  Listen for words that students are having trouble with and spend extra time on those.\r\nPlay a Game: Step to the Board\r\nTap on a picture and have students repeat the word, while doing the action. Then, students need to stand up and take three steps forward. Each time they take a step, they should say the word and do the action. When students are close to the board, chase them back to their seats. Repeat\r\n",
+    "Video": "**"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [levelAudioManager.audios.screenTitle.reading_lets_remember, unitAudioManager.audios.reading.monkey, unitAudioManager.audios.reading.mitten, unitAudioManager.audios.reading.muffin, unitAudioManager.audios.reading.moose, unitAudioManager.audios.reading.motorcycle, unitAudioManager.audios.reading.mouse, unitAudioManager.audios.reading.mailbox],
     "images": [levelImageManager.images.reading.mailbox,levelImageManager.images.backgroundimage,levelImageManager.images.screenTitle.vocabulary_listen_and_repeat, levelImageManager.images.screenTitle.reading_lets_remember, levelImageManager.images.reading.monkey, levelImageManager.images.reading.mitten, levelImageManager.images.reading.muffin, levelImageManager.images.reading.moose, levelImageManager.images.reading.motorcycle, levelImageManager.images.reading.mouse, levelImageManager.images.reading.mailbox]
   }

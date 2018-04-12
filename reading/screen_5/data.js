@@ -1,44 +1,30 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  // ==== templateName contains name of the template which will use this data.js ==== //
-  "templateName": "rev_story_m",
-  // ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.reading_lets_remember,
-    titleAudio: levelAudioManager.audios.screenTitle.reading_lets_remember_the_story,
-    title: "the Story",
-    subTitle: {
-      title: "Do It Together ",
-      textAlign: "left"
-    },
-    fontColor: "#333333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "5. Let's Remember the Story",
+    "Instruction Text": "Drag the parts to arrange the picture.\r\nThen drag the words to arrange the sentence.",
+    "Learning Objectives": "•  Develop concept of print and associated skills\r\n•  Match (spoken) text to respective pages of the story\r\n•  Arrange sentences by matching written words",
+    "Student Engagement": "•  Whole class production\r\n•  Group and individual productoin",
+    "Teaching Procedure": "•  Invite students to drag the pieces to complete the puzzle.\r\n•  Draw attention to the grey words, then have students repeat the sentence (point to the words as students say them).\r\n•  Ask students: 'What is the first word in the sentence?'.\r\n•  Encourage all students to respond, then invite one student to come the board and drag the word.\r\n•  Repeat for all words.\r\n•  When complete, tap NEXT for a different page from the story.\r\n"
   },
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	ay (id's and classes) ==== //
   "scaleElements": [".rev_story_m"],
   // ==== instText is used to give instruction text(itext) at the bottom of the screen ==== //
   "instText": "Drag the parts to arrange the picture. Then drag the words to arrange the sentence.",
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Remember the Story",
-    //"howItWorks": "  Drag pieces to complete the puzzle, then drag words to complete the sentence.</br>Notes:<li>When puzzle is complete, the page text is read out and the sentences appear.</li><li>Words must be dragged in correct sequence, from left to right.</li><li>If incorrect word is dragged, it springs back to original position.</li>",
-    learningObjectives: "<li>Develop concept of print and associated skills</li><li>Match (spoken) text to respective pages of the story</li><li>Arrange sentences by matching written words</li>",
-    studentEngagement: "<li>Whole class production</li><li>Group and individual productoin</li>",
-    teachingProcedure: "<li>Invite students to drag the pieces to complete the puzzle.</li><li>Draw attention to the grey words, then have students repeat the sentence (point to the words as students say them).</li><li> Ask students: 'What is the first word in the sentence?'.</li><li>Encourage all students to respond, then invite one student to come the board and drag the word.</li><li>Repeat for all words.</li><li>When complete, tap <span class='boldStyle'>NEXT</span> for a different page from the story.</li>",
-    videoData: [{
-
-    }],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "5. Let's Remember the Story",
+    "Instruction Text": "Drag the parts to arrange the picture.\r\nThen drag the words to arrange the sentence.",
+    "Learning Objectives": "•  Develop concept of print and associated skills\r\n•  Match (spoken) text to respective pages of the story\r\n•  Arrange sentences by matching written words",
+    "Student Engagement": "•  Whole class production\r\n•  Group and individual productoin",
+    "Teaching Procedure": "•  Invite students to drag the pieces to complete the puzzle.\r\n•  Draw attention to the grey words, then have students repeat the sentence (point to the words as students say them).\r\n•  Ask students: 'What is the first word in the sentence?'.\r\n•  Encourage all students to respond, then invite one student to come the board and drag the word.\r\n•  Repeat for all words.\r\n•  When complete, tap NEXT for a different page from the story.\r\n"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [
       unitAudioManager.audios.phonics.feedback[0],
       unitAudioManager.audios.phonics.feedback[1],

@@ -1,31 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-
-module.exports = {
-  // ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.vocabulary_lets_practice,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_practice_words_man_1,
-    title: "Words",
-    subTitle: {
-      title: "Say It by Yourself",
-      textAlign: "left"
-    },
-    fontColor: "#333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "3. Let's Practice Words",
+    "Instruction Text": "Tap the pictures to make them disappear. Tap RESET to show more pictures.",
+    "Learning Objectives": "•  Correctly identify words when presented with an image\r\n•  Produce words with correct pronunciation\r\n•  Demonstrate mastery of words",
+    "Student Engagement": "•  Individual production",
+    "Teaching Procedure": "•  Point to a picture and have students say the word, then tap the picture and move to the next one. •  Continue, until there are no more pictures on the screen.\r\n•  Tap RESET to show more pictures.\r\nPlay a Game: Timed Relay (2 Teams)\r\nTap the TIMER in the toolbar to enable the timer. Divide the class into two teams (with students of mixed abilities in each team). One team plays at a time. When you start the timer, students in one team take turns to run to the board, say a word and tap the picture. When all the pictures have been tapped, record the time, then invite the next team to play. When the second team has finished, compare times. Play again.\r\nTIP: To make sure students SAY the words, make a rule that if students do not say each word before tapping it, the other team automatically wins.",
+    "Video": "*"
   },
-  // ==== instructionText is used to give instruction text(itext) at the bottom of the screen ==== //
-  instructionText: "Tap the pictures to make them disappear. Tap <span class='boldStyle'>RESET</span> to show more pictures.",
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
-  "scaleElements": ["#fc_v_2 .elemContainer"],
-  // ==== backgroundImage provide background image to the screen ==== //
-  "backgroundImg": levelImageManager.images.backgroundimage,
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	ckgroundimage,
   // ==== spriteData contains data required to create  sprite animation ==== //
   "spriteData": [
     {
@@ -346,17 +331,18 @@ module.exports = {
   // ===== ostArr array contains on screen text ====== //
   "ostArr": [],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Practice Words",
-    //"howItWorks": " Tap any image to make it disappear.  Tap the ‘next’ button for a new set of words. </br><u>Notes</u> <li>Each set of pictures should contain two instances of the target words. </li><li>Words should appear in a random order. </li><li>Words should QUICKLY disappear when tapped. </li><li>No audio confirmation of word needed when tapped. </li> ",
-    learningObjectives: " <li>Correctly identify words when presented with an image</li><li>Produce words with correct pronunciation</li><li>Demonstrate mastery of words</li> ",
-    studentEngagement: " <li>Individual production</li> ",
-    teachingProcedure: " <li>Point to a picture and have students say the word, then tap the picture and move to the next one.</li><li>Continue, until there are no more pictures on the screen.</li><li>Tap <span class='boldStyle'>RESET</span> to show more pictures.<br><u>Play a Game: Timed Relay (2 Teams)</u><br>Tap the <span class='boldStyle'>TIMER</span> in the toolbar to enable the timer. Divide the class into two teams (with students of mixed abilities in each team). One team plays at a time. When you start the timer, students in one team take turns to run to the board, say a word and tap the picture. When all the pictures have been tapped, record the time, then invite the next team to play. When the second team has finished, compare times. Play again.<br>TIP: To make sure students SAY the words, make a rule that if students do not say each word before tapping it, the other team automatically wins.</li>",
-    videoData: [{}],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "3. Let's Practice Words",
+    "Instruction Text": "Tap the pictures to make them disappear. Tap RESET to show more pictures.",
+    "Learning Objectives": "•  Correctly identify words when presented with an image\r\n•  Produce words with correct pronunciation\r\n•  Demonstrate mastery of words",
+    "Student Engagement": "•  Individual production",
+    "Teaching Procedure": "•  Point to a picture and have students say the word, then tap the picture and move to the next one. •  Continue, until there are no more pictures on the screen.\r\n•  Tap RESET to show more pictures.\r\nPlay a Game: Timed Relay (2 Teams)\r\nTap the TIMER in the toolbar to enable the timer. Divide the class into two teams (with students of mixed abilities in each team). One team plays at a time. When you start the timer, students in one team take turns to run to the board, say a word and tap the picture. When all the pictures have been tapped, record the time, then invite the next team to play. When the second team has finished, compare times. Play again.\r\nTIP: To make sure students SAY the words, make a rule that if students do not say each word before tapping it, the other team automatically wins.",
+    "Video": "*"
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [levelAudioManager.audios.warm_up.puff_1,],
     "images": [levelImageManager.images.screenTitle.vocabulary_lets_practice, levelImageManager.images.backgroundimage]
   }

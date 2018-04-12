@@ -1,21 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ==== //
-    titleImage: levelImageManager.images.screenTitle.speaking_lets_learn,
-    titleAudio: levelAudioManager.audios.screenTitle.speaking_lets_learn_sentences,
-    title: "Sentences",
-    subTitle: {
-      title: "Listen and Repeat",
-      textAlign: "left"
-    },
-    fontColor: "#333333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "1. Let's Learn Sentences",
+    "Instruction Text": "Tap PLAY to start. Tap NEXT for more conversations.",
+    "Learning Objectives": "•  Understand the meaning of the dialogue and language structures\r\n•  Listen to and repeat the responsepart of the dialogue with correct pronunciation and intonation",
+    "Student Engagement": "•  Look and listen\r\n•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Allow students to listen to the dialogue.\r\n•  Use actions and expressive voice to help students understand the meaning of the language.\r\n•  Encourage students to repeat the response part of the dialogue, with actions.\r\n•  Tap NEXT for more dialogues."
   },
-  // ==== To load iframe ==== //
-  "htmlSrc": "src/courses/level_1/unit_1/week_1/speaking/screen_1/iframe_data/html_canvas_speaking_test.html",
-  /* minScale is used to scale the elements
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	 scale the elements
      If true : Enable scaling
      If false : Disable scaling
   */
@@ -74,18 +68,17 @@ module.exports = {
   "ostAudio": levelAudioManager.audios.speaking.female,
 
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Learn Sentences",
-    //"howItWorks": " Tap the speech bubble to listen to the sentence. Tap the character to listen to only the name of that character.  </br><u>Notes</u> <li>Dialogues should appear in the sequence scripted. </li> ",
-    learningObjectives: "<li>Understand the meaning of the dialogue and language structures</li><li> Listen to and repeat the <i>response</i> part of the dialogue with correct pronunciation and intonation</li>",
-    studentEngagement: "<li>Look and listen</li><li> Whole-class listen and repeat</li>",
-    teachingProcedure: "<li>Allow students to listen to the dialogue.</li><li>Use actions and expressive voice to help students understand the meaning of the language.</li><li>Encourage students to repeat the response part of the dialogue, with actions.</li><li>Tap <span class='boldStyle'>NEXT</span> for more dialogues.</li>",
-    videoData: [{}],
-    gameActivity:"FALSE"
-
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "1. Let's Learn Sentences",
+    "Instruction Text": "Tap PLAY to start. Tap NEXT for more conversations.",
+    "Learning Objectives": "•  Understand the meaning of the dialogue and language structures\r\n•  Listen to and repeat the responsepart of the dialogue with correct pronunciation and intonation",
+    "Student Engagement": "•  Look and listen\r\n•  Whole-class listen and repeat",
+    "Teaching Procedure": "•  Allow students to listen to the dialogue.\r\n•  Use actions and expressive voice to help students understand the meaning of the language.\r\n•  Encourage students to repeat the response part of the dialogue, with actions.\r\n•  Tap NEXT for more dialogues."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [],
     "videos": [],
     "images": [levelImageManager.images.speaking.backgroundimage]

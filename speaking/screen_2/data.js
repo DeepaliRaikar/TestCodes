@@ -1,17 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import levelVideoManager from "../../../../common_assets/videos/video_manager";
-module.exports = {
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.speaking_lets_practice,
-    titleAudio: levelAudioManager.audios.screenTitle.speaking_lets_practice_sentences,
-    title: "Sentences",
-    subTitle: {
-      title: "Sing Together",
-      textAlign: "left"
-      // textAlign: "left|right|center"
-    },
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "2. Let's Practice Sentences",
+    "Instruction Text": "Tap PLAY to hear the song.",
+    "Learning Objectives": "•  Repeated practice of dialogue and language structures\r\n•  Build confidence & memorize language structures",
+    "Student Engagement": "• Whole-class production",
+    "Teaching Procedure": "•  Play the song and sing along, while doing simple actions.\r\n•  Encourage students to join in when they feel confident to do so.\r\n•  Sing the song as a whole class (1-2 times).\r\n",
+    "Video": "*"
+  },
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	},
     fontColor: "#333333"
   },
   // ===== Need to add title ======
@@ -56,22 +55,18 @@ module.exports = {
   ],
   "ostArr": [],
   // ===== Prepare Mode data in HTML format ======
-  "prepareData": {
-    tocTitle: "Let's Practice Sentences",
-    //"howItWorks":" Tap to play the song. </br>Notes <li>Need to create some way to stop, pause and play the song while it is playing. </li> ",
-    learningObjectives:"<li>Repeated practice of dialogue and language structures used</li><li>Build confidence & memorize language structures</li>",
-    studentEngagement:"<li>Whole-class production</li>",
-    teachingProcedure:"<li>Play the song and sing along, while doing simple actions.</li><li>Encourage students to join in when they feel confident to do so.</li><li>Sing the song as a whole class (1-2 times).</li>",
-    videoData: [
-      {
-        // "video": require("./assets/videos/intro_01.mp4"),
-        // "poster": require("./assets/images/scr_33_summary_image_01.png")
-      }
-    ],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "2. Let's Practice Sentences",
+    "Instruction Text": "Tap PLAY to hear the song.",
+    "Learning Objectives": "•  Repeated practice of dialogue and language structures\r\n•  Build confidence & memorize language structures",
+    "Student Engagement": "• Whole-class production",
+    "Teaching Procedure": "•  Play the song and sing along, while doing simple actions.\r\n•  Encourage students to join in when they feel confident to do so.\r\n•  Sing the song as a whole class (1-2 times).\r\n",
+    "Video": "*"
   },
-  // ===== Preloading the data ======
-  "preloadData": {
+  // ===== preloadData data object contains data used for preloading ====== //
+	"preloadData": {
     "audios": [],
     "images": [levelImageManager.images.warm_up_screen1_thmb,levelImageManager.images.warm_up_screen1_bg]
   }

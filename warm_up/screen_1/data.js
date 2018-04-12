@@ -1,10 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import levelVideoManager from "../../../../common_assets/videos/video_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  // ==== screenTitle data object is used for screen level audio and images ==== //
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "1. Let's Remember Songs",
+    "Instruction Text": "Tap PLAY to hear the song.",
+    "Learning Objectives": "•  Build confidence\r\n",
+    "Student Engagement": "•  Whole-class production",
+    "Teaching Procedure": "•  Sing the song and encourage students to join in when they feel comfortable."
+  },
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	ect is used for screen level audio and images ==== //
   screenTitle: {
     titleImage: levelImageManager.images.screenTitle.warm_up_lets_remember,
     titleAudio: levelAudioManager.audios.screenTitle.lets_remember_songs_man_1,
@@ -40,17 +45,17 @@ module.exports = {
   // ===== ostArr array contains on screen text ====== //
   "ostArr": [],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Remember Songs",
-    //"howItWorks": "  Tap to play the song.",
-    learningObjectives  : "<li>Build confidence</li>",
-    studentEngagement  : "<li>Whole-class production</li>",
-    teachingProcedure  : "<li>Sing the song and encourage students to join in when they feel comfortable.</li>",
-    videoData  : [{}],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "1. Let's Remember Songs",
+    "Instruction Text": "Tap PLAY to hear the song.",
+    "Learning Objectives": "•  Build confidence\r\n",
+    "Student Engagement": "•  Whole-class production",
+    "Teaching Procedure": "•  Sing the song and encourage students to join in when they feel comfortable."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [levelAudioManager.audios.screenTitle.lets_remember_songs_man_1],
     "images": [levelImageManager.images.screenTitle.warm_up_lets_remember,levelImageManager.images.warm_up.screen_1_bg, levelVideoManager.videos.warm_up_01]
   }

@@ -1,41 +1,16 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-import unitAudioManager from "../../../common_assets/audios/audio_manager";
-module.exports = {
-  screenTitle: {
-    // ==== screenTitle data object is used for screen level audio and images ====
-    titleImage: levelImageManager.images.screenTitle.phonics_lets_find,
-    titleAudio: levelAudioManager.audios.screenTitle.lets_find_the_sound_of_the_day_man_1,
-    title: "the Sound of the Day",
-    subTitle: {
-      title: "Say It Together",
-      textAlign: "left"
-    },
-    fontColor: "#ffffff"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "2. Let's Find the Sound of the Day",
+    "Instruction Text": "Tap the speakers to hear a word. Listen to the first sound, then tap the bin or the word of the day.",
+    "Learning Objectives": "•  Listen to words and identify words beginning with the sound of the day (initial phoneme recognition)",
+    "Student Engagement": "•  Whole-class production",
+    "Teaching Procedure": "•  Tap the speaker and guide students to listen to the first sound of the word.\r\n•  If the word starts with the sound of the day, encourage students to say the sound (and do the action for the sound).\r\n•  If the word does not start with the sound of the day, encourage students to say: ‘NO’.\r\n•  Depending on the first sound of the word, tap the word of the day or the bin at the bottom of the screen.\r\n•  Click the speaker again and continue.\r\n•  Tap RESET to play again.\r\nTIP: If students are able, have them say the sentence: '[word] starts with [sound]' (e.g. 'Milk starts with /m/).\r\nPlay a Game: Sit or Stand\r\nTap the speaker to hear a word. If the word begins with the sound of the day, students should stand up and say the sound (and do the action). If the word does not begin with the sound of the day, they should remain sitting and say: ‘No’. Either you or a student can click the correct picture on the screen. Continue.",
+    "Video": "*"
   },
-
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ====
-  "scaleElements": [
-    ".speakerLeft",
-    ".speakerRight",
-    ".fillStarWrapper",
-    ".imgclass",
-    "#hotSpot",
-    ".itemsWrapper"
-  ],
-  // ==== instText is used to give instruction text(itext) at the bottom of the screen ====
-  "instructionText": "Tap the speakers to hear a word. Listen to the first sound, then tap the bin or the word of the day.",
-  // ==== spriteData contains data required to create  sprite animation ====
-  "spriteData": [
-    {
-      id: 0,
-      // ==== frames data object object contains animation's width, height and number of frames ====
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	ns animation's width, height and number of frames ====
       frames: {
         width: unitImageManager.sprites.characterSayWord.data.frames.width,
         height: unitImageManager.sprites.characterSayWord.data.frames.height,
@@ -328,22 +303,18 @@ module.exports = {
     }
   ],
   // ===== Prepare Mode data in HTML format ======
-  "prepareData": {
-    tocTitle: "Let's Find the Sound of the Day",
-    // "howItWorks": "  Click <u>the </u><u>action </u><u>button </u>to hear a word.  Click <u>the </u>cloud to hear <u>the </u>word again.  If <u>the </u>word begins with <u>the </u>sound of <u>the </u>day, click <u>the </u>green button.  If it does not, click <u>the </u>red button.  </br>Randomize words (mix words beginning with letter of the day with other words)  </br>Words should be in different order each time activity is played.  </br><u>Notes</u> <li>Need to discuss which sides to have red and green buttons </li><li>When a the correct button is tapped, a star lights up on the same side and sound effect (sound effect for green button will be letter-sound). </li><li>If the incorrect button is tapped, nothing happens. </li><li>Randomize words from word-list (no more than three in a row from the same category). </li><li> </li> ",
-    learningObjectives: "<li>Listen to words and identify words beginning with the sound of the day (initial phoneme recognition)</li>",
-    studentEngagement:"<li>Whole-class production</li>",
-    teachingProcedure: "<li>Tap the speaker and guide students to listen to the first sound of the word.</li><li>If the word starts with the sound of the day, encourage students to say the sound (and do the action for the sound).</li><li>If the word does not start with the sound of the day, encourage students to say: ‘NO’.</li><li>Depending on the first sound of the word, tap the word of the day or the bin at the bottom of the screen.</li><li>Click the speaker again and continue.</li><li>Tap <span class='boldStyle'>RESET</span> to play again.<br> TIP: If students are able, have them say the sentence: '[word] starts with [sound]' (e.g. 'Milk starts with /m/).<br><u>Play a Game: Sit or Stand</u><br>Tap the speaker to hear a word. If the word begins with the sound of the day, students should stand up and say the sound (and do the action). If the word does not begin with the sound of the day, they should remain sitting and say: ‘No’. Either you or a student can click the correct picture on the screen. Continue.</li>",
-    videoData: [
-      {
-        "video": "",
-        "poster": ""
-      }
-    ],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "2. Let's Find the Sound of the Day",
+    "Instruction Text": "Tap the speakers to hear a word. Listen to the first sound, then tap the bin or the word of the day.",
+    "Learning Objectives": "•  Listen to words and identify words beginning with the sound of the day (initial phoneme recognition)",
+    "Student Engagement": "•  Whole-class production",
+    "Teaching Procedure": "•  Tap the speaker and guide students to listen to the first sound of the word.\r\n•  If the word starts with the sound of the day, encourage students to say the sound (and do the action for the sound).\r\n•  If the word does not start with the sound of the day, encourage students to say: ‘NO’.\r\n•  Depending on the first sound of the word, tap the word of the day or the bin at the bottom of the screen.\r\n•  Click the speaker again and continue.\r\n•  Tap RESET to play again.\r\nTIP: If students are able, have them say the sentence: '[word] starts with [sound]' (e.g. 'Milk starts with /m/).\r\nPlay a Game: Sit or Stand\r\nTap the speaker to hear a word. If the word begins with the sound of the day, students should stand up and say the sound (and do the action). If the word does not begin with the sound of the day, they should remain sitting and say: ‘No’. Either you or a student can click the correct picture on the screen. Continue.",
+    "Video": "*"
   },
-  // ===== preloadData data object contains data used for preloading ======
-  "preloadData": {
+  // ===== preloadData data object contains data used for preloading ====== //
+	"preloadData": {
     "audios": [
       unitAudioManager.audios.phonics.monkey_screen2,
       unitAudioManager.audios.phonics.muffin_screen2,

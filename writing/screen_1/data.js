@@ -1,39 +1,15 @@
-import levelImageManager from "../../../../common_assets/images/image_manager";
-import unitImageManager from "../../../common_assets/images/image_manager";
-import levelAudioManager from "../../../../common_assets/audios/audio_manager";
-
-module.exports = {
-  // ==== screenTitle data object is used for screen level audio and images ==== //
-  screenTitle: {
-    titleImage: levelImageManager.images.screenTitle.writing_lets_learn,
-    titleAudio: levelAudioManager.audios.screenTitle.writing_lets_learn_big_and_small_letters,
-    title: "Big and Small Letters",
-    subTitle: {
-      title: "Look, Listen and Do It Together",
-      textAlign: "left"
-    },
-    fontColor: "#333333"
+{
+    "Level": "L2",
+    "Unit": "U2",
+    "TOC Text": "1. Let's Learn Big and Small Letters",
+    "Instruction Text": "Tap the letters to see the strokes. Tap FUN to change the mode.",
+    "Learning Objectives": "•  Understand how to properly write upper-case and lower-case forms of the letter of the day",
+    "Student Engagement": "•  Look and listen",
+    "Teaching Procedure": "•  Ask students: 'What is the letter of the day?' and have them respond.\r\n•  Tell students that we will learn how to write 'big M'. \r\n•  Tap the 'big M' on the board and allow students to see the stroke order.\r\n•  Have students stand up and use their fingers to write 'big M' in the air. Use the simple instructions:  'Down, down, up, down'.\r\n•  Tap the ' big M' on the board again and repeat.\r\n•  Tap the FUN button and have students write in the air again as they watch the letter strokes on the board.\r\n•  Tap the PEN in the toolbar to enable the pen function.\r\n•  Begin by demonstrating the correct way to write 'big M'.\r\n•  Write the letter again, making some silly mistakes (consider stroke order, proportions and position on the lines).\r\n•  Finally, demonstrate again the correct way to write 'big M'.\r\n•  Repeat all of the above for 'small m'.\r\n•  Stroke Instructions for 'small m':  'Down, over, over'."
   },
-
-  /* minScale is used to scale the elements
-     If true : Enable scaling
-     If false : Disable scaling
-  */
-  "minScale": true,
-  // ==== scaleElements scales the element which are in it's array (id's and classes) ==== //
-  "scaleElements": ["#write_letr_m #writing_board"],
-  // ==== backgroundImg provides background image ==== //
-  "backgroundImg": levelImageManager.images.backgroundimage,
-  // ==== boardData data object contains data of board ==== //
-  "boardData": {
-    bgImg: [require("./assets/images/l1_u1_w1_wri_02.png")],
-    button: [
-      {
-        text: "Pen",
-        img: [require("./assets/images/lets_learn_big_and_small_letters_small_m_01.png")]
-      }, {
-        text: "Fun",
-        img: [require("./assets/images/car_icon.png")]
+  // ===== preloadData data object contains data used for preloading ====== //
+	oading ====== //
+	 [require("./assets/images/car_icon.png")]
 
       }
     ]
@@ -183,17 +159,17 @@ module.exports = {
   // ===== ostArr array contains on screen text ====== //
   "ostArr": [],
   // ===== Prepare Mode data in HTML format ====== //
-  "prepareData": {
-    tocTitle: "Let's Learn Big and Small Letters",
-    //"howItWorks": "  Tap on <u>the </u>lines to see how to write <u>the </u>capital <u>letter</u><u>.</u>  <u>Click </u><u>‘</u><u>next</u><u>’ </u><u>for </u><u>the </u><u>lower-case </u><u>letter</u><u>.</u>  ",
-    learningObjectives: "<li>Understand how to properly write upper-case and lower-case forms of the letter of the day</li>",
-    studentEngagement: "<li>Look and listen</li>",
-    teachingProcedure: "<li>Ask students: 'What is the letter of the day?' and have them respond.</li><li>Tell students that we will learn how to write 'big M'.</li><li>Tap the 'big M' on the board and allow students to see the stroke order.</li><li> Have students stand up and use their fingers to write 'big M' in the air. Use the simple instructions: 'Down, down, up, down'.</li><li>Tap the ' big M' on the board again and repeat.</li><li>Tap the <span class='boldStyle'>FUN</span> button and have students write in the air again as they watch the letter strokes on the board.</li><li>Tap the <span class='boldStyle'>PEN</span> in the toolbar to enable the pen function.</li><li>Begin by demonstrating the correct way to write 'big M'.</li><li>Write the letter again, making some silly mistakes (consider stroke order, proportions and position on the lines).</li><li>Finally, demonstrate again the correct way to write 'big M'.</li><li>Repeat all of the above for 'small m'.</li><li>Stroke Instructions for 'small m':  'Down, over, over'.</li>",
-    videoData: [{}],
-    gameActivity:"FALSE"
+  "prepareData":{
+    "Level": "L1",
+    "Unit": "U1",
+    "TOC Text": "1. Let's Learn Big and Small Letters",
+    "Instruction Text": "Tap the letters to see the strokes. Tap FUN to change the mode.",
+    "Learning Objectives": "•  Understand how to properly write upper-case and lower-case forms of the letter of the day",
+    "Student Engagement": "•  Look and listen",
+    "Teaching Procedure": "•  Ask students: 'What is the letter of the day?' and have them respond.\r\n•  Tell students that we will learn how to write 'big M'. \r\n•  Tap the 'big M' on the board and allow students to see the stroke order.\r\n•  Have students stand up and use their fingers to write 'big M' in the air. Use the simple instructions:  'Down, down, up, down'.\r\n•  Tap the ' big M' on the board again and repeat.\r\n•  Tap the FUN button and have students write in the air again as they watch the letter strokes on the board.\r\n•  Tap the PEN in the toolbar to enable the pen function.\r\n•  Begin by demonstrating the correct way to write 'big M'.\r\n•  Write the letter again, making some silly mistakes (consider stroke order, proportions and position on the lines).\r\n•  Finally, demonstrate again the correct way to write 'big M'.\r\n•  Repeat all of the above for 'small m'.\r\n•  Stroke Instructions for 'small m':  'Down, over, over'."
   },
   // ===== preloadData data object contains data used for preloading ====== //
-  "preloadData": {
+	"preloadData": {
     "audios": [require("./assets/audios/writing_cap_m_car.mp3"), require("./assets/audios/writing_small_m_car.mp3")],
     "images": [require("./assets/images/l1_u1_w1_wri_01.png"), require("./assets/images/lets_learn_big_and_small_letters_small_m_01.png"), require("./assets/images/car_icon.png")]
   }
