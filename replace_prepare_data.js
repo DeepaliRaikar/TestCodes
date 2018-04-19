@@ -3,7 +3,7 @@ var fs = require('fs');
 // include XLSX to read an excel worksheet
 var XLSX = require('xlsx');
 var striptags = require('striptags');
-var workbook = XLSX.readFile('LU_Teaching Guide for Prepare Mode.xlsx');
+var workbook = XLSX.readFile('L1U1_Teaching Guide for Prepare Mode.xlsx');
 
 var sheet_name_list = workbook.SheetNames;
 var row_data = [" "];
@@ -87,8 +87,9 @@ sheet_name_list.forEach(function(worksheet_name) {
             formatted_cell_data_list = formatted_cell_data_list.replace("<br/>", "</li></ul>");
             formatted_cell_data_list = formatted_cell_data_list.replace(new RegExp("</li></ul>"+'$'), "");
           }
-
-
+          if(formatted_cell_data_list.includes("font-size:10;")){
+            formatted_cell_data_list = formatted_cell_data_list.replace(/ style="font-size:10;"/g,"");
+          }
 
           value = formatted_cell_data_list.trim();
         }
@@ -117,8 +118,11 @@ sheet_name_list.forEach(function(worksheet_name) {
       }
       if(row_data[0]["TOC Text"].includes(".")){
         var toc_title_text = row_data[0]["TOC Text"].split(".");
-        row_data[0]["TOC Text"] = "<b>"+toc_title_text.pop();
+        row_data[0]["TOC Text"] = "<b>"+toc_title_text.pop()+"</b>";
+        row_data[0]["TOC Text"] = row_data[0]["TOC Text"].replace("</span>","");
+
       }
+
 
       var level_name = row_data[0]["Level"].toLowerCase();
       var level = level_name.substring(0,1);
@@ -154,7 +158,13 @@ sheet_name_list.forEach(function(worksheet_name) {
              "Learning Objectives":learningObjectives_key,
              "Student Engagement":studentEngagement_key,
              "Teaching Procedure":teachingProcedure_key,
-             "Video":videoData_key
+             "Video":videoData_key,
+             "<b>": "<span class='boldStyle'>",
+             "</b>": "</span>",
+             "<i>": "<span class='italicStyle'>",
+             "</i>": "</span>",
+             "<br/></li>": "</li>"
+
           };
           var removeObjectProperties = function(obj, props) {
               for(var i = 0; i < props.length; i++) {
@@ -169,21 +179,29 @@ sheet_name_list.forEach(function(worksheet_name) {
 
           // Stringify row_data
           screen_data = JSON.stringify(row_data, null, 2).substr(1).slice(0, -1).trim()+",";
-          screen_data = screen_data.replace(/TOC Text|Learning Objectives|Student Engagement|Teaching Procedure|Video/gi, function(matched){
+          screen_data = screen_data.replace(/<\/span><\/span>/g, "</span>");
+
+
+          screen_data = striptags(screen_data, ['b', 'u', 'i', 'li', 'br','span']);
+          screen_data = screen_data.replace(/TOC Text|Learning Objectives|Student Engagement|Teaching Procedure|Video|<b>|<\/b>|<i>|<\/i>|<br\/><\/li>/gi, function(matched){
             return mapObj[matched];
           });
           // screen_data = screen_data.replace("&#x000d;&#x000a;", "<br/>");
           // screen_data = replaceAll(screen_data, "&#x000d;&#x000a;", "<br/>");
           screen_data = screen_data.replace(/&#x000d;&#x000a;/g, "<br/>");
-          screen_data = screen_data.replace(/<br\/><\/li>/g, "</li>");
+          // screen_data = screen_data.replace(/<br\/><\/li>/g, "</li>");
+          screen_data = screen_data.replace(/<\/span><\/span>/g, "</span>");
+
 
           //Remove all <br/> before </li>
 
-          screen_data = striptags(screen_data, ['b', 'u', 'i', 'ul', 'li', 'br']);
+
+          // screen_data = screen_data.replace(/<b>/g, "<span class='boldStyle'>");
+          // screen_data = screen_data.replace(/<\/b>/g, "</span>");
           // screen_data = screen_data.replace("&#x000d;&#x000a;", "<br />");
           screen_data += "\r\n  // ===== preloadData data object contains data used for preloading ====== //\r\n\t";
           replace_string = screen_data;
-          console.log(replace_string);
+          // console.log(replace_string);
 
           // Fetch the string to be replaced from '"prepareData":' to '"preloadData"'
           var string_to_replace = getFromBetween.get(file,'"prepareData":','"preloadData"');
